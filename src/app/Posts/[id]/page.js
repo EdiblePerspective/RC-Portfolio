@@ -10,7 +10,7 @@ export default async function SelectedPost() {
     const post = await sql(`SELECT * FROM posts WHERE id = $1`,[id]);
     return (
     <>
-    {post.map((mappedPost)=>{
+    {post.rows.map((mappedPost)=>{
     return(
     <div key={mappedPost.id}>
     <h1>{mappedPost.title}</h1>
