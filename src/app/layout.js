@@ -3,7 +3,7 @@ export const metadata = {
   description: 'Junior Developer Portfolio Website',
 }
 import Link from "next/link"
-import styles from "globals.css"
+import  './globals.css'
 import {sql} from "@vercel/postgres"
 export default function RootLayout({ children }) {
 return (
