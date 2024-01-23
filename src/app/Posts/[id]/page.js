@@ -1,21 +1,17 @@
-import Link from "next/link";
+
 import {sql} from "@vercel/postgres"
-export async function generateMetadata({params}){
-    const response = await fetch(
-        `https://jsonplaceholder.typicode.com/posts/${params.id}`);
-    const post = await response.json();
+export async function generateMetadata(){
+    const post = await sql(`SELECT * FROM posts WHERE id = $1`,[id]);
     return {
         title: `${post.title} | RC-Portfolio`,
-        description: `${post.body} | RC-Portfolio`,};}
+        description: `${post.body} | RC-Portfolio`}}
 
-export default async function SelectedPost({params}) {
-    const response= await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
-    const post=await response.json();
-    
+export default async function SelectedPost() {
+    const post = await sql(`SELECT * FROM posts WHERE id = $1`,[id]);
     return (
     <>
-    <h1>Post</h1>
-    <h2>{post.title}</h2>
+    <h1>{post.title}</h1>
+    <h3>{post.username}</h3>
     <p>{post.body}</p>
     </>
     );}

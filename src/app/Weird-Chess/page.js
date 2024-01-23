@@ -2,7 +2,6 @@ export const metadata = {
   title: 'Weird Chess | RC-Portfolio',
   description: 'Completely normal chess',
 }
-import styles from "./chess-board.css";
 
 export default function Chess() {
   return (
