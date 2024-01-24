@@ -1,8 +1,9 @@
+"use client";
 export const metadata = {
   title: 'Weird Chess | RC-Portfolio',
   description: 'Completely normal chess',
 }
-"use client";
+
 import AnimateIn from "./components/AnimateIn"
 
 export default function Chess() {
