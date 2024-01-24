@@ -1,7 +1,7 @@
 "use client";
 import {useFormStatus} from "react-dom";
 
-export default function savePostButton(){
+export default function SavePostButton(){
     const {pending} = useFormStatus();
     return(
         <button disabled={pending} className={pending? "disabled":""}>

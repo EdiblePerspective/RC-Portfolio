@@ -5,7 +5,7 @@ export const metadata = {
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import savePostButton from "./components/savePostButton";
+import SavePostButton from "./components/savePostButton";
 export default function addPost(){
     async function handleAddPost(formData){
         "use server";
@@ -27,7 +27,7 @@ export default function addPost(){
             
             <label htmlFor="content">Content</label>
             <input name="content" id="content" placeholder="Content" />
-            <savePostButton />
+            <SavePostButton />
             </form>
             </div>);
 }
