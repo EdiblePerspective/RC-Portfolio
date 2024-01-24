@@ -1,4 +1,4 @@
-"use client";
+
 export const metadata = {
   title: 'Weird Chess | RC-Portfolio',
   description: 'Completely normal chess',
