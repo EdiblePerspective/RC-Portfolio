@@ -22,7 +22,7 @@ export default function addPost(){
             <label htmlFor="username">Username</label>
             <input name="username" id="username" placeholder="Username" />
             
-            <label htmlFor="title">Name</label>
+            <label htmlFor="title">Title</label>
             <input name="title" id="title" placeholder="Title" />
             
             <label htmlFor="content">Content</label>
