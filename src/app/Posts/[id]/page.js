@@ -1,10 +1,10 @@
 
 import {sql} from "@vercel/postgres"
 export async function generateMetadata({params}){
-    const post = await sql`SELECT * FROM posts WHERE id = ${params.id}`;
+    const postA = await sql`SELECT * FROM posts WHERE id = ${params.id}`;
     return {
-        title: `${post.title} | RC-Portfolio`,
-        description: `${post.content} | RC-Portfolio`}}
+        title: `Post ${params.id} | RC-Portfolio`,
+        description: `${postA.content} | RC-Portfolio`}}
 
 export default async function SelectedPost({params}) {
     const post = await sql`SELECT * FROM posts WHERE id = ${params.id}`;

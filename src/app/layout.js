@@ -4,7 +4,6 @@ export const metadata = {
 }
 import Link from "next/link"
 import  './globals.css'
-import {sql} from "@vercel/postgres"
 export default function RootLayout({ children }) {
 return (
 <html lang="en">
@@ -13,7 +12,7 @@ return (
       <Link href="/">Home</Link>
         <Link href="/Posts">Posts</Link>
         <Link href="/About">About</Link>
-        <Link href="/Weird-Chess">Weird Chess</Link>
+        <Link href="/Games">Games</Link>
     </nav>
     {children}
   </body>
