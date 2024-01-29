@@ -3,16 +3,18 @@ export const metadata = {
   description: 'Junior Developer Portfolio Website',
 }
 import Link from "next/link"
-import  './globals.css'
+
+import './globals.css'
 export default function RootLayout({ children }) {
 return (
 <html lang="en">
   <body>
+
     <nav>
       <Link href="/">Home</Link>
-        <Link href="/Posts">Posts</Link>
-        <Link href="/About">About</Link>
-        <Link href="/Games">Games</Link>
+        <Link href="/pages/Posts">Posts</Link>
+        <Link href="/pages/About">About</Link>
+        <Link href="/pages/Games">Games</Link>
     </nav>
     {children}
   </body>

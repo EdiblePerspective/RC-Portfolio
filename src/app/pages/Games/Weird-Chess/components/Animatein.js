@@ -5,5 +5,5 @@ return(
 <motion.div
 //animations here
 >
-{children}
-</motion.div>)}
+{children}</motion.div>
+)}

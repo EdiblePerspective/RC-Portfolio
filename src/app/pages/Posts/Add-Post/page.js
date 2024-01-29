@@ -16,6 +16,7 @@ export default function addPost(){
         revalidatePath("/Posts");
         redirect("/Posts")}
     return(
+        
         <div>
             <h2>Add Post</h2>
             <form action={handleAddPost}>
@@ -29,5 +30,6 @@ export default function addPost(){
             <input name="content" id="content" placeholder="Content" />
             <SavePostButton />
             </form>
-            </div>);
+            </div>
+            );
 }

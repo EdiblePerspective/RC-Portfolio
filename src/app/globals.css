@@ -1,4 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{box-sizing: border-box;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    width: 100svw;
+    height: 100vh;
+    height: 100svh;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 8%);
+    background-size: 5vmin 5vmin;
+    color: white;
+    text-align: center;
+    background-position: center;
+    transition: background-position 200ms ease;
+}
 
+a {
+    color: #0070f3;
+    text-decoration: none;}
+a:hover {
+    text-decoration: underline;}

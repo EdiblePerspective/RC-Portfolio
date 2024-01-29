@@ -4,11 +4,12 @@ export const metadata = {
   description: 'Completely normal chess',
 }
 
-import AnimateIn from "./components/AnimateIn"
+import AnimateIn from "./components/Animatein"
 
 export default function Chess() {
   return (
 <>
+
 <h1>Totally Normal Chess</h1>
 <div className="grid grid-cols-{8} grid-rows-{8}">
     <div id="A1"></div>
@@ -83,5 +84,6 @@ export default function Chess() {
     <div id="H7"></div>
     <div id="H8"></div>
 </div>
+
 </>
 );}
