@@ -1,6 +1,6 @@
 
 import {sql} from "@vercel/postgres"
-import SaveCommentButton from "./components/SaveCommentButton";
+import SaveCommentButton from "./components/saveCommentButton";
 export async function generateMetadata({params}){
     const postA = await sql`SELECT * FROM posts WHERE id = ${params.id}`;
     return {
