@@ -18,7 +18,7 @@ export default async function SelectedPost({params}) {
     <h1>{mappedPost.title}</h1>
     <h3>{mappedPost.username}</h3>
     <p>{mappedPost.content}</p>
-    <Link href={`/Posts/${mappedPost.id}/Add-Comment`}>Add a Comment</Link>
+    <Link href={`/pages/Posts/${mappedPost.id}/Add-Comment`}>Add a Comment</Link>
     </div>)})};
     
     {comments.rows.map((mappedComments)=>{

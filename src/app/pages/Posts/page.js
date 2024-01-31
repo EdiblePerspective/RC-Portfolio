@@ -17,7 +17,7 @@ export default async function PostsLinks() {
   {posts.rows.map((post)=>{
     return(
       <div key={post.id} className="post">
-        <Link href={`/Posts/${post.id}`}>{post.title}, {post.username}</Link>
+        <Link href={`/pages/Posts/${post.id}`}>{post.title}, {post.username}</Link>
       </div>)})};
   
   </>
