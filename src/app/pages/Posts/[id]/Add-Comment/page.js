@@ -9,7 +9,6 @@ async function handleAddComment(formData){
     const comContent=formData.get("comContent");
     await sql`INSERT INTO comments (username, postId, content) VALUES (${comUsername},${params.id},${comContent})`;;
     revalidatePath(`pages/Posts/${params.id}`);
-    redirect(`pages/Posts/${params.id}`)
 }
 return(
 <div>
