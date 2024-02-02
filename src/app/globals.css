@@ -14,7 +14,6 @@ body{
     color: white;
     text-align: center;
     background-position: center;
-    transition: background-position 200ms ease;
 }
 
 a {

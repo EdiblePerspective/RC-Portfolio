@@ -3,13 +3,13 @@ export const metadata = {
   description: 'Junior Developer Portfolio Website',
 }
 import Link from "next/link"
-
+import Cursor from "./components/Cursor"
 import './globals.css'
 export default function RootLayout({ children }) {
 return (
 <html lang="en">
   <body>
-
+  <Cursor/>
     <nav>
       <Link href="/">Home</Link>
         <Link href="/pages/Posts">Posts</Link>
